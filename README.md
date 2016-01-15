@@ -1,2 +1,2 @@
 # abhs-mercer-112
-ArchivesSpace interface plugin
+ArchivesSpace interface plugin for ABHS/Mercer
