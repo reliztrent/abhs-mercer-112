@@ -1,0 +1,64 @@
+/*
+This stylesheet contains all of the css overwrites/additions for the abhs-mercer plugin.
+*/
+
+/*background colors */
+body {
+  background: #CCC url('/archivesspace/assets/abhs-background.png') repeat-x top left;
+}
+
+/*------Workarounds for having 2 logos------*/
+/* consistent heights for logos */
+div.branding-container img {max-height:80px;} 
+
+#branding-box {
+display:block;
+margin: 15px 0 0;
+padding:10px;
+}
+
+/* special styling for for "University Libraries" logo text */
+.logo-text {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 1.4em;
+	text-decoration:none;
+}
+.logo-text:hover {
+	color:white;
+	text-decoration:none;
+}
+
+/* 2 logos requires additional styling at smaller sizes so that second logo doesn't drop to a second line */
+@media (max-width: 700px) {
+  div.branding-container img {
+	max-height:45px;
+  }
+  .logo-text {
+  }
+}
+
+
+/*--------Menu customizations------*/
+
+/* supress "Accession" from main menu */
+.nav a[href="/search?type=accession"] { display:none; } 
+
+/* supress "Repository" from main menu & breadcrumb links*/
+.nav a[href="/search?type=repository"] { display:none; }
+.breadcrumb .icon-repository + a[href*="repositories"] { display:none; }
+
+/* styling for finding aids */
+fieldset h3 {font-size:120%;margin:30px 0 5px;}
+fieldset h4 {font-size:110%;line-height:130%;}
+fieldset .dl-horizontal dt {text-align:left;}
+fieldset .dl-horizontal dt:after {content:":"}
+
+
+/*--------Breadcrumb customizations--------*/
+.breadcrumb {background-image:none;background-color: rgb(61, 103, 169);}
+.breadcrumb>li {text-shadow: none;}
+.breadcrumb>li.active {color: #D5DFEC; text-shadow: 0 1px 0 rgb(11, 50, 111);}
+.breadcrumb>li>a {color: #EAEFF5;}
+

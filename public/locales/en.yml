@@ -1,0 +1,26 @@
+en:
+  brand:
+    title: Mercer & ABHS Collection Guides
+    home: Home
+    welcome_message: Explore the Collection Guides
+    welcome_search_label: ""
+  
+  record_tree:
+    record_tree_tab: Record Tree
+    search_tab: Search Contents
+  
+  resource:
+    id_0: Call Number
+    "[:id_0, :id_1, :id_2, :id_3]": Call Number
+    "[:repo_id, :identifier]": Call Number
+    identifier: Call Number
+    _public:
+      section:
+        components: Contents
+
+  digital_object: &digital_object_attributes
+    digital_object_id: Digital ID
+
+  extent: &extent_attributes
+    _plural: Size
+    _singular: Size
